@@ -17,10 +17,12 @@ import darkMode from './utils/dark-mode';
 import CardsSwift from './utils/card-swift';
 import loader from './utils/loading';
 import scrollanimation from './utils/scroll';
+import backbtn from './utils/back-btn'
    
     NavMobile();
     darkMode();
     CardsSwift();
     loader();
     scrollanimation();
+    backbtn();
     // autotyped();
