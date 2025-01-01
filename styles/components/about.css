@@ -49,6 +49,9 @@
   border-radius: 2.5rem;
   border:3.5px solid var(--clr-green);
 }
+.about__img:hover{
+  filter: drop-shadow(0 0 1em var(--clr-green));
+}
 
 @media (min-width:320px){
   .about__img{

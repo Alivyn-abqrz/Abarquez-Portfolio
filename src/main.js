@@ -17,6 +17,7 @@ import darkMode from './utils/dark-mode';
 import CardsSwift from './utils/card-swift';
 import loader from './utils/loading';
 import scrollanimation from './utils/scroll';
+import rocketClick from './utils/rocket'
 import backbtn from './utils/back-btn'
    
     NavMobile();
@@ -24,5 +25,6 @@ import backbtn from './utils/back-btn'
     CardsSwift();
     loader();
     scrollanimation();
+    rocketClick();
     backbtn();
     // autotyped();

@@ -15,6 +15,7 @@
     <meta name="keyword" content="Web design, html , css , javascript, Alvin Abarquez">
     <title>Portfolio Website</title>
   </head>
+  <img src="rocket.png" alt="Rocket with andriod" class="rocket">
   <body>
    <!-- Loading Screen -->
    <div class="loading"></div>
@@ -58,7 +59,7 @@
    <main>
       <button id="btn-backUp"><i class="fa-solid fa-arrow-up"></i></button>
     <!-- Home section -->
-    <section class="home" id="home">
+    <section class="home" id="home" class="rocket">
         <div class="home__content hidden">
               <h3>Hi, I am</h3>
               <h1><span class="auto-type"></span></h1>
@@ -75,7 +76,8 @@
                 </div>
         </div>
                     <div class="home__img hidden">
-                        <img src="/profile.png" alt="Profile">
+                        <img src="/profile.png" alt="Profile" class="profile">
+                        <img src="/lang.png" alt="logo prog language" class="lang">
                     </div>
     </section>
     <!-- End of Home Section -->
@@ -290,17 +292,6 @@
       backSpeed: 150,
       loop: true
     });
-    const backtoTopBtn = document.querySelector('#btn-backUp');
- window.addEventListener('scroll', scrollFunction);
-
- function scrollFunction(){
-if (window.pageYOffset > 300){
-  backtoTopBtn.computedStyleMap.display= 'block';
-}
-  else {
-  backtoTopBtn.computedStyleMap.display= 'none';
- }
- }
     </script>
   </body>
 </html>
