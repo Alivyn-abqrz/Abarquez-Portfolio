@@ -32,8 +32,6 @@
   border:3.5px solid var(--clr-green);
 }
 .home__img .lang{
-  width: 10rem;
-  height: 8rem;
   position: absolute;
   top: 80px;
   left: 5px;
@@ -170,6 +168,10 @@
     font-size: var(--size-base);
     margin:0 1rem 0 1rem;
 }
+.home__img .lang{
+  width: 6.25rem;
+  height: 5rem;
+}
 .home__content h3{
   font-size: var(--size-xl);
   margin: 0 1rem 0 1rem;
@@ -195,33 +197,14 @@
     margin: 0 3rem;
 }
 }
-@media (min-width:375px){
-.home__img{
-  width: 16rem;
-  
-}
-
-.social__media {
- margin-left: 0;
-}
-}
-@media (min-width:425px){
-  .home__img{
-    width: 20rem;
-    
-  }
-  .home__content{
-    margin: 0 1rem;
-  }
-  .social__media {
-    margin-left:0;
-   }
-}
 @media (min-width:768px){
   .home__content p{
     font-size:var( --size-base) ;
   }
- 
+  .home__img .lang{
+    width: 10rem;
+    height: 8rem;
+  }
   .download-cv{
     margin-left: 1rem;
   }
