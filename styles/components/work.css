@@ -1,136 +1,90 @@
-.work__container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card__container{
-  padding-block:var(--size-5xl) ;
-}
-.card__content{
-  margin-inline: 1.75rem;
-  border-radius: var(--size-xl);
-  overflow: hidden;
-}
-.card__lang{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 0.4rem;
-}
-.img__lang{
-  width: 40px;
-  height: 40px;
-}
-.card__image{
-  border-top-left-radius:  var(--size-xl);  /* Adjust the value as needed */
-  border-top-right-radius: var(--size-xl); /* Adjust the value as needed */
-  overflow: hidden;
-  background-color:#94a3b8 ;
-  padding-top:var(--size-2xl) ;
-  margin-bottom:-.75rem ;
-  width: 100%;
-  height: 200px;
-}
-.card__data{
-  height: 200px;
-  background-color:#1e293b ;
-  padding: 1.5rem 2rem;
-  border-radius: 1rem;
+/* General Styling */
+.projects-section {
+  padding: 50px 20px;
+  background-color: var(--clr-dark);
   text-align: center;
-  position: relative;
-  z-index: 10;
 }
-.card__img{
-  width: 500px;
-  position: relative;
-  z-index: 5;
-}
-.card__name{
-  color:#f1f5f9 ;
-  font-size:1rem ;
-  margin-bottom: .75rem;
-}
-.card__description{
-  color: #94a3b8;
-}
-.card__button{
-  background-color: transparent; /* Primary color */
-  color: #50C878;
-  text-decoration: none;
+
+.work__container h2 {
   text-align: center;
-  display: inline-block;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1rem;
-  border: 2px solid #f1f5f9 ;
-  border-radius: 5px;
-}
-.card__button:hover{
-  border: 2px solid #50C878;
-  background-color: #50C878;
+  font-size: 2rem;
+  margin-bottom: 30px;
   color: var(--clr-light);
 }
-.swiper-button-next::after,
-.swiper-button-prev::after{
-  content: '';
+
+/* Projects Container */
+.projects-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.swiper-button-next,
-.swiper-button-prev{
-  width: initial;
-  height: initial;
-  font-size: 2rem;
-  color: var(--clr-green);
-  display: none;
+
+/* Project Card */
+.project-card {
+  background: var(--clr-dark);
+  border: 1px solid var(--clr-slate400);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
 }
-.swiper-button-prev{
-  left:0;
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-.swiper-button-next{
-  right: 0;
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
-.swiper-pagination-bullet{
-  background-color:rgba(80, 200, 120,0.5);
-  opacity: 1;
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 15px;
+  color: var(--clr-slate400);
 }
-.swiper-pagination-bullet-active{
-  background-color: var(--clr-green);
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0 15px 15px;
+  color: var(--clr-light);
 }
-.card__container h2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--size-base);
+
+.project-card .btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background: var(--clr-green);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
-@media  screen and (min-width:320px) {
-  .card__data{
-    padding: 1rem;
-    height: 100%;
-  }
-  .card__description{
-    font-size: var(--size-xs);
+
+.project-card .btn:hover {
+  background: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-section h2 {
+    font-size: 2rem;
   }
 
-}
-@media  screen and (min-width:375px) {
-  .card__data{
-    width: 100%;
-    height: 200px;
+  .project-card h3 {
+    font-size: 1.25rem;
   }
 
-}
-@media  screen and (min-width:768px) {
-  .card__content{
-   margin-inline:var(--size-5xl);
+  .project-card p {
+    font-size: 0.9rem;
   }
-.swiper-button-next,
-.swiper-button-prev{
-  display: block;
-}
-}
-@media  screen and (min-width:1024px){
-  .card__container{
-    max-width: 1120px;
-  }
-  .card__container h2{
-    font-size: var(--size-xl);
+
+  .project-card .btn {
+    padding: 8px 16px;
   }
 }
